@@ -8,13 +8,13 @@ COPY . /Idt.Test.Service
 WORKDIR /Idt.Test.Service
 
 # Run the following commands in Linux Terminal to restore .NET Core packages
-RUN ["dotnet", "restore"]
+RUN dotnet restore
  
 # Build the application
-RUN ["dotnet", "build"]
+RUN dotnet build
 
 # Expose a port number from the container to outside world
-EXPOSE 8000
+EXPOSE 5000
 
 # Determine an entry point of the application.
-ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]
+ENTRYPOINT ["dotnet", "run", "--project", "Idt.Test.Service"]
