@@ -1,3 +1,3 @@
-/bin
-/obj
 /.vs
+/Idt.Test.Service/bin
+/Idt.Test.Service/obj

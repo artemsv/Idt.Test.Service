@@ -14,7 +14,7 @@ namespace Idt.Test.Service
         {
             // Default options
             var contentRoot = Directory.GetCurrentDirectory();
-            var port = 8000;
+            var port = 5000;
 
             // Parse arguments
             var remainingArgs = args.ToList();
