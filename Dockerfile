@@ -1,7 +1,7 @@
 # This is the base image which determines from which Docker image the container should derive.
 FROM microsoft/dotnet:latest
 
-# Copy the files and folders from current directory to "app" directory
+# Copy the files and folders from current directory to "app" directory.
 COPY . /Idt.Test.Service
 
 # Set the working directory as "app" directory
