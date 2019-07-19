@@ -1,1 +1,1 @@
-runGlobalBuildPipeline(this)
+echo "My First Jenkins File"
